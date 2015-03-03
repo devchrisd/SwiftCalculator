@@ -40,9 +40,9 @@ class ViewController: UIViewController {
 
         switch operation {
         case "×": performOperation { $1 * $0 }
-        case "÷": performOperation { $0 / $1 }
+        case "÷": performOperation { $1 / $0 }
         case "+": performOperation { $0 + $1 }
-        case "−": performOperation { $0 - $1 }
+        case "−": performOperation { $1 - $0 }
         case "√": performOperation { sqrt($0) }
         default:
             break
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
 
     }
 
-    func performOperation(operation: (Double, Double) -> Double) {
+    func performOperation( operation: (Double, Double) -> Double ) {
         if operandStack.count >= 2 {
             displayValue = operation(operandStack.removeLast(), operandStack.removeLast())
             enter()
