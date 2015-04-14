@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -129,19 +129,6 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M5e-zR-uNV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTA-yv-cRh">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
-                                <state key="normal" title="⏎">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="74" y="225" width="50" height="50"/>
-                                </variation>
-                                <connections>
-                                    <action selector="enter" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMK-Ip-8XE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="549-J6-HwP">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -233,6 +220,32 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJO-Qu-Cho"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsl-mX-j2O">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
+                                <state key="normal" title="CE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="283" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clearOp" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uct-EE-yCw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTA-yv-cRh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
+                                <state key="normal" title="⏎">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="74" y="225" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="enter" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMK-Ip-8XE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -245,7 +258,6 @@
                                 <exclude reference="vpw-rK-a8b"/>
                                 <exclude reference="i0x-dP-Aeh"/>
                                 <exclude reference="1eU-AQ-Ppr"/>
-                                <exclude reference="rTA-yv-cRh"/>
                                 <exclude reference="549-J6-HwP"/>
                                 <exclude reference="Wpd-LC-vJf"/>
                                 <exclude reference="Gps-NF-qQg"/>
@@ -253,6 +265,8 @@
                                 <exclude reference="4nQ-f1-sKu"/>
                                 <exclude reference="gNI-Oa-EOt"/>
                                 <exclude reference="hhi-Af-K9z"/>
+                                <exclude reference="Vsl-mX-j2O"/>
+                                <exclude reference="rTA-yv-cRh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -265,7 +279,6 @@
                                 <include reference="vpw-rK-a8b"/>
                                 <include reference="i0x-dP-Aeh"/>
                                 <include reference="1eU-AQ-Ppr"/>
-                                <include reference="rTA-yv-cRh"/>
                                 <include reference="549-J6-HwP"/>
                                 <include reference="Wpd-LC-vJf"/>
                                 <include reference="Gps-NF-qQg"/>
@@ -273,6 +286,8 @@
                                 <include reference="4nQ-f1-sKu"/>
                                 <include reference="gNI-Oa-EOt"/>
                                 <include reference="hhi-Af-K9z"/>
+                                <include reference="Vsl-mX-j2O"/>
+                                <include reference="rTA-yv-cRh"/>
                             </mask>
                         </variation>
                     </view>
